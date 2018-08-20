@@ -1,4 +1,4 @@
-## Example: unable to resolve non-class Swift protocol using `.weak` object scope on Xcode 10.x.
+## Example: unable to resolve non-class Swift protocol using `.weak` object scope on Xcode 10.
 
 
 ## Requirements
@@ -9,5 +9,8 @@
 ## Installation
 
 ```
-pod install
+git clone https://github.com/m3g0byt3/swinject-weak-object-scope\
+ && cd swinject-weak-object-scope\
+  && pod install\
+   && open SwinjectObjectScopeTest.xcworkspace
 ```
