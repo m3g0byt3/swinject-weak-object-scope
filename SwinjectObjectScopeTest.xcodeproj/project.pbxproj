@@ -13,11 +13,10 @@
 		4111EB392129AEF1008F42D0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4111EB372129AEF1008F42D0 /* Main.storyboard */; };
 		4111EB3B2129AEF2008F42D0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4111EB3A2129AEF2008F42D0 /* Assets.xcassets */; };
 		4111EB3E2129AEF2008F42D0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4111EB3C2129AEF2008F42D0 /* LaunchScreen.storyboard */; };
-		4111EB562129B078008F42D0 /* ContainerScopeTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4111EB542129B077008F42D0 /* ContainerScopeTest.swift */; };
-		4111EB572129B078008F42D0 /* WeakScopeTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4111EB552129B078008F42D0 /* WeakScopeTest.swift */; };
 		4111EB5B2129B0A1008F42D0 /* ClassProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4111EB582129B0A1008F42D0 /* ClassProtocol.swift */; };
 		4111EB5C2129B0A1008F42D0 /* NonClassProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4111EB592129B0A1008F42D0 /* NonClassProtocol.swift */; };
 		4111EB5D2129B0A1008F42D0 /* SingletonClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4111EB5A2129B0A1008F42D0 /* SingletonClass.swift */; };
+		41A9ACA6212ABC62006717D6 /* ContainerSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41A9ACA5212ABC62006717D6 /* ContainerSpec.swift */; };
 		93BE496690A0C365835DBAF8 /* Pods_SwinjectObjectScopeTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AF885E1FFF1BF8169218F085 /* Pods_SwinjectObjectScopeTest.framework */; };
 /* End PBXBuildFile section */
 
@@ -42,11 +41,10 @@
 		4111EB3F2129AEF2008F42D0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4111EB442129AEF2008F42D0 /* SwinjectObjectScopeTestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwinjectObjectScopeTestTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4111EB4A2129AEF2008F42D0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		4111EB542129B077008F42D0 /* ContainerScopeTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContainerScopeTest.swift; sourceTree = "<group>"; };
-		4111EB552129B078008F42D0 /* WeakScopeTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeakScopeTest.swift; sourceTree = "<group>"; };
 		4111EB582129B0A1008F42D0 /* ClassProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClassProtocol.swift; sourceTree = "<group>"; };
 		4111EB592129B0A1008F42D0 /* NonClassProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NonClassProtocol.swift; sourceTree = "<group>"; };
 		4111EB5A2129B0A1008F42D0 /* SingletonClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SingletonClass.swift; sourceTree = "<group>"; };
+		41A9ACA5212ABC62006717D6 /* ContainerSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContainerSpec.swift; sourceTree = "<group>"; };
 		98A6FB7AF99A094954ACCB61 /* Pods_SwinjectObjectScopeTestTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwinjectObjectScopeTestTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9AD801D3E9A137FD86AF8ABE /* Pods-SwinjectObjectScopeTestTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwinjectObjectScopeTestTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SwinjectObjectScopeTestTests/Pods-SwinjectObjectScopeTestTests.release.xcconfig"; sourceTree = "<group>"; };
 		9B94CB01D38CA7AA5AF2DC4C /* Pods-SwinjectObjectScopeTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwinjectObjectScopeTest.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SwinjectObjectScopeTest/Pods-SwinjectObjectScopeTest.debug.xcconfig"; sourceTree = "<group>"; };
@@ -109,8 +107,7 @@
 		4111EB472129AEF2008F42D0 /* SwinjectObjectScopeTestTests */ = {
 			isa = PBXGroup;
 			children = (
-				4111EB542129B077008F42D0 /* ContainerScopeTest.swift */,
-				4111EB552129B078008F42D0 /* WeakScopeTest.swift */,
+				41A9ACA5212ABC62006717D6 /* ContainerSpec.swift */,
 				4111EB4A2129AEF2008F42D0 /* Info.plist */,
 			);
 			path = SwinjectObjectScopeTestTests;
@@ -167,8 +164,8 @@
 				4111EB2C2129AEF1008F42D0 /* Sources */,
 				4111EB2D2129AEF1008F42D0 /* Frameworks */,
 				4111EB2E2129AEF1008F42D0 /* Resources */,
-				AED9B72E8B4EC279D8E48E52 /* [CP] Embed Pods Frameworks */,
 				4111EB5F2129B17F008F42D0 /* Run SwiftLint for debug builds */,
+				002E91E28A9573603427D53C /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -187,7 +184,7 @@
 				4111EB402129AEF2008F42D0 /* Sources */,
 				4111EB412129AEF2008F42D0 /* Frameworks */,
 				4111EB422129AEF2008F42D0 /* Resources */,
-				959B397F5B76E482F6955697 /* [CP] Embed Pods Frameworks */,
+				4C9D750EB7E28FE7FA2EA8CD /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -258,6 +255,24 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		002E91E28A9573603427D53C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-SwinjectObjectScopeTest/Pods-SwinjectObjectScopeTest-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Swinject/Swinject.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Swinject.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SwinjectObjectScopeTest/Pods-SwinjectObjectScopeTest-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		2FD251F0569651B1A57837DC /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -299,20 +314,16 @@
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputFileListPaths = (
-			);
 			inputPaths = (
 			);
 			name = "Run SwiftLint for debug builds";
-			outputFileListPaths = (
-			);
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "if [ \"${CONFIGURATION}\" = \"Debug\" ]; then\n    if which swiftlint > /dev/null; then\n        swiftlint\n    else\n        echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint to lint!\"\n    fi\nfi\n";
 		};
-		959B397F5B76E482F6955697 /* [CP] Embed Pods Frameworks */ = {
+		4C9D750EB7E28FE7FA2EA8CD /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -320,32 +331,18 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-SwinjectObjectScopeTestTests/Pods-SwinjectObjectScopeTestTests-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Swinject/Swinject.framework",
+				"${BUILT_PRODUCTS_DIR}/Nimble/Nimble.framework",
+				"${BUILT_PRODUCTS_DIR}/Quick/Quick.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Swinject.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Nimble.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Quick.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SwinjectObjectScopeTestTests/Pods-SwinjectObjectScopeTestTests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		AED9B72E8B4EC279D8E48E52 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-SwinjectObjectScopeTest/Pods-SwinjectObjectScopeTest-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/Swinject/Swinject.framework",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Swinject.framework",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SwinjectObjectScopeTest/Pods-SwinjectObjectScopeTest-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -367,8 +364,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4111EB562129B078008F42D0 /* ContainerScopeTest.swift in Sources */,
-				4111EB572129B078008F42D0 /* WeakScopeTest.swift in Sources */,
+				41A9ACA6212ABC62006717D6 /* ContainerSpec.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

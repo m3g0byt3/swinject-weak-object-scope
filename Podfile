@@ -13,6 +13,8 @@ target 'SwinjectObjectScopeTest' do
    
     # Pods for testing
     pod 'Swinject'
+    pod 'Quick'
+    pod 'Nimble'
   
   end
 
